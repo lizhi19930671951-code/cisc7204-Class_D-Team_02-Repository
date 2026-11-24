@@ -38,3 +38,7 @@ This project examines observed daily starts in the supplied 2023 non-JC Citi Bik
 ## Scope
 
 The results describe observed daily trip starts in the supplied release and cannot establish the effect of weather on unconstrained demand. The timestamps do not contain offsets. The source date is interpreted as New York local civil date. A coordinate rectangle is a screening check, and no exact administrative boundary overlay was available. PRCP grouping avoids assuming a physical precipitation unit. The numerical PRCP amount model retains the raw CSV scale. The main temperature variable is the midpoint of the confirmed Fahrenheit high and low.
+
+Github URL
+
+https://github.com/lizhi19930671951-code/cisc7204-Class_D-Team_02-Repository
