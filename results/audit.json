@@ -1,0 +1,45 @@
+{
+  "raw": 35106986,
+  "valid_before_dedup": 35106386,
+  "invalid_id": 0,
+  "invalid_timestamp": 0,
+  "nonpositive_naive_duration": 324,
+  "out_of_year": 276,
+  "start_month_differs_from_archive": 6202,
+  "source_strings_with_offset": 0,
+  "missing_coordinates": 18196,
+  "outside_broad_nyc_rectangle": 0,
+  "input_rows": 33656,
+  "stations": 126,
+  "shards": 40,
+  "retained": 35106386,
+  "duplicate_valid": 0,
+  "cross_date_duplicates": 0,
+  "joined_days": 365,
+  "zero_ride_days": 0,
+  "coordinates_minmax": [
+    40.633385,
+    40.8863,
+    -74.0867006778717,
+    -73.84978
+  ],
+  "missing": {
+    "tmax": 0,
+    "tmin": 0,
+    "tavg": 365,
+    "prcp": 0,
+    "awnd": 1,
+    "snow": 0
+  },
+  "groups": {
+    "Recorded zero": 199,
+    "Measurable": 123,
+    "Trace": 43
+  },
+  "positive_snow_days": 4,
+  "prcp_observation_times": {
+    "2400": 365
+  },
+  "scope": "Records from supplied 2023 Citi Bike monthly release (non-JC filenames). Rectangle check is exploratory; no municipal boundary claim.",
+  "time_basis": "Date shown in offset-free source timestamps, treated as NYC local civil date. No timezone offset inferred."
+}

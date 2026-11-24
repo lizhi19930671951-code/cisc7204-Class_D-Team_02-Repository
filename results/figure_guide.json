@@ -1,0 +1,66 @@
+{
+  "daily": [
+    "Daily Citi Bike starts in 2023",
+    "365 NYC-release dates",
+    "Exact daily totals and a labeled trailing 7-day mean.",
+    "Monthly ticks and rides in thousands show variation through the year.",
+    "A muted daily series and thick teal mean avoid competing colors.",
+    "Seasonal structure motivates adjustment for month and weekday."
+  ],
+  "scatter": [
+    "Warmer dates tend to have more starts",
+    "Raw data before calendar adjustment",
+    "Every point is one date. Pearson r is a descriptive statistic.",
+    "The axes show the temperature proxy in °F and starts in thousands.",
+    "Small teal dots make overlap visible without obscuring the cloud.",
+    "The upward pattern motivates an adjusted comparison."
+  ],
+  "precip": [
+    "Fewer starts on measurable precipitation days",
+    "Central Park recorded groups",
+    "All 365 days and group sizes are shown, together with group means.",
+    "Recorded zero, trace and measurable days have separate labels.",
+    "A common scale and sparse marks keep the comparison readable.",
+    "Trace and recorded zero look similar descriptively, while measurable days are lower."
+  ],
+  "curve": [
+    "Calendar-adjusted temperature by month",
+    "Central 80% of recorded-zero temperatures within each month",
+    "Each panel uses its month's observed range and shows pointwise 95% HAC intervals.",
+    "Shared axes compare the °F proxy and modeled mean starts across months.",
+    "Teal curves and light bands distinguish estimates from uncertainty.",
+    "Monthly panels show where the annual model has local temperature support."
+  ],
+  "residual": [
+    "Residuals still vary across the year",
+    "Adjusted model, ordered by calendar date",
+    "All 365 residuals are shown relative to zero.",
+    "The time axis helps locate unusual periods and the sign of errors.",
+    "A thin baseline and a single data color keep attention on departures.",
+    "Runs above and below zero motivate daily dependence checks."
+  ],
+  "weekday": [
+    "Daily starts vary by day of week",
+    "Descriptive medians and interquartile ranges",
+    "The line spans the middle 50% of dates, not a confidence interval.",
+    "Days follow calendar order and each sample size is printed.",
+    "A shared scale and sparse marks make groups easy to compare.",
+    "Different day profiles motivate separate weekday controls."
+  ],
+  "joint": [
+    "Temperature and precipitation together",
+    "Raw median starts by weather group and temperature band",
+    "Sample sizes appear in every cell. Medians are hidden when n < 5.",
+    "A common color scale and numerical labels show the median starts.",
+    "Muted shading leaves room for the cell labels.",
+    "Readers can see which combinations have limited support before interpreting the raw differences."
+  ],
+  "contrasts": [
+    "Adjusted changes in daily starts",
+    "Primary model contrasts, pointwise 95% HAC intervals",
+    "All plotted intervals come from the same primary model.",
+    "The zero line separates higher from lower modeled starts.",
+    "The chart uses one unit and simple interval marks.",
+    "Readers can compare magnitudes and distinguish the less precise trace result."
+  ]
+}

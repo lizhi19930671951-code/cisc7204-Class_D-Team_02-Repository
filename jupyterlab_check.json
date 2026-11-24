@@ -1,0 +1,29 @@
+{
+  "jupyterlab": "4.6.6",
+  "kernel": "Python 3.12.14 / ipykernel 7.4.0",
+  "browser": "Chrome",
+  "action": "JupyterLab Run > Run All Cells, saved and inspected outputs",
+  "annual_raw_zip_used": true,
+  "results": [
+    {
+      "notebook": "01_Prepare_Daily_Data.ipynb",
+      "code_cells": 2,
+      "png_outputs": 0,
+      "errors": 0,
+      "screenshot": "01_JupyterLab_Data_Audit.png",
+      "sha256": "c043df352785f8494525966cbd635a1f9c2fd99d51010adb6aa4e2c220c6d887",
+      "run_scope": "Previously verified revision; identical notebook data preparation and inputs"
+    },
+    {
+      "notebook": "02_Weather_Association.ipynb",
+      "code_cells": 11,
+      "png_outputs": 8,
+      "errors": 0,
+      "screenshot": "02_JupyterLab_Adjusted_Results.png",
+      "sha256": "e520ff61965874a8e61b984be7ee9987546db5e71a16e143e65e7bd9018422a8",
+      "run_scope": "Integrated revision re-executed in JupyterLab"
+    }
+  ],
+  "main_tables_match_previous_release": true,
+  "monthly_curve_quantiles_and_support_verified": true
+}

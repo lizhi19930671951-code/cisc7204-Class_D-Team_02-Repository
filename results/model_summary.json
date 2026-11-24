@@ -1,0 +1,111 @@
+{
+  "n": 365,
+  "pearson": 0.7299882761862474,
+  "mean_daily": 96181.8794520548,
+  "models": {
+    "simple": {
+      "n": 365,
+      "p": 4,
+      "r2": 0.6720231507219172,
+      "adjusted_r2": 0.6692975813373347,
+      "mae": 14857.827368217506,
+      "rmse": 18482.275799954554,
+      "condition_number": 3.4387483100408764
+    },
+    "calendar": {
+      "n": 365,
+      "p": 18,
+      "r2": 0.6407644688650549,
+      "adjusted_r2": 0.6231650336221325,
+      "mae": 13887.820614338236,
+      "rmse": 19342.984976730124,
+      "condition_number": 13.550742714047818
+    },
+    "adjusted": {
+      "n": 365,
+      "p": 22,
+      "r2": 0.7924752707291687,
+      "adjusted_r2": 0.779769675059526,
+      "mae": 10387.573249780771,
+      "rmse": 14701.741419159387,
+      "condition_number": 50.27394168007944
+    },
+    "adjusted_amount": {
+      "n": 365,
+      "p": 21,
+      "r2": 0.7988707764810093,
+      "adjusted_r2": 0.7871772169740913,
+      "mae": 10163.984875080097,
+      "rmse": 14473.429179942535,
+      "condition_number": 49.91627801128582
+    }
+  },
+  "temp_50_to_60": {
+    "estimate": 12899.89606746905,
+    "lower": 10437.327209477327,
+    "upper": 15362.464925460772,
+    "se": 1256.4357699509542
+  },
+  "temp_70_to_80": {
+    "estimate": 10813.665883181151,
+    "lower": 5781.652289837318,
+    "upper": 15845.679476524983,
+    "se": 2567.401050751807
+  },
+  "measurable_vs_zero": {
+    "estimate": -21724.918517694034,
+    "lower": -26514.769155614056,
+    "upper": -16935.06787977401,
+    "se": 2443.8462521259344
+  },
+  "trace_vs_zero": {
+    "estimate": -3142.009752028897,
+    "lower": -6390.688494613634,
+    "upper": 106.66899055584099,
+    "se": 1657.519611691797
+  },
+  "group_summary": {
+    "Measurable": {
+      "size": 123,
+      "mean": 80977.25203252032,
+      "median": 75820.0,
+      "min": 17757,
+      "max": 144020
+    },
+    "Recorded zero": {
+      "size": 199,
+      "mean": 104006.45728643217,
+      "median": 108767.0,
+      "min": 24810,
+      "max": 157773
+    },
+    "Trace": {
+      "size": 43,
+      "mean": 103462.76744186046,
+      "median": 112154.0,
+      "min": 43325,
+      "max": 144722
+    }
+  },
+  "acf_lag1": 0.2911366558228111,
+  "acf_lag7": -0.0330015972634816,
+  "durbin_watson": 1.4145248749865889,
+  "temp_vif": 5.874632248761699,
+  "square_vif": 1.7364875737709502,
+  "high_cook_dates": [
+    {
+      "date": "2023-11-23",
+      "cook": 0.0424796316108641
+    },
+    {
+      "date": "2023-09-23",
+      "cook": 0.040087833177647116
+    },
+    {
+      "date": "2023-09-29",
+      "cook": 0.03306891710133053
+    }
+  ],
+  "specification": "OLS with centered midpoint, its square, recorded precipitation categories, weekday and month. HAC 7 calendar-day lags, Bartlett weights, n/(n-p) correction, asymptotic normal pointwise 95% intervals.",
+  "interpretation": "Temperature and precipitation associations conditional on controls. Each monthly curve uses the central 80% of that month's recorded-zero precipitation temperatures and averages over weekdays observed among those same dates. Contrast support audit requires the endpoints to be bracketed and at least two dates within 2.5\u00b0F of each endpoint in a month. This descriptive screen does not establish date-level overlap."
+}

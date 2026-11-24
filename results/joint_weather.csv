@@ -1,0 +1,13 @@
+temp_band,precip_group,n,median,shown
+<40°F,Recorded zero,25,63554.0,True
+<40°F,Trace,5,58192.0,True
+<40°F,Measurable,8,49533.0,True
+40–<55°F,Recorded zero,68,84232.5,True
+40–<55°F,Trace,14,85913.5,True
+40–<55°F,Measurable,46,58850.0,True
+55–<70°F,Recorded zero,55,122183.0,True
+55–<70°F,Trace,11,112979.0,True
+55–<70°F,Measurable,33,95466.0,True
+≥70°F,Recorded zero,51,128990.0,True
+≥70°F,Trace,13,132153.0,True
+≥70°F,Measurable,36,111527.0,True

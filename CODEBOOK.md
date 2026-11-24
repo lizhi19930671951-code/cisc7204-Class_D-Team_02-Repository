@@ -1,0 +1,22 @@
+# Codebook
+
+| Variable | Definition |
+|---|---|
+| date | 2023 date parsed from the start timestamp as supplied. The nominal study calendar is New York local time. |
+| ride_count | Count of unique valid trip IDs starting on the date. Valid means 16 hexadecimal characters, parsed start and end, positive duration on the source clock and 2023 start. |
+| member_count, casual_count, other_rider_count | Partition of ride_count by the source member_casual field. |
+| rectangle_count | Count with observed start coordinates inside 40.477–40.918 latitude and −74.260 to −73.700 longitude. The rectangle includes non-NYC space. |
+| station | GHCN-Daily station ID. |
+| tmax, tmin | Quality-screened daily maximum and minimum in °F. |
+| temp_mid_f, temp_mid_c | (TMAX + TMIN)/2 in °F and converted to °C. Calculated proxy for daily temperature. |
+| tavg | Reported daily average. Entirely missing at the primary station. |
+| prcp | Quality-screened daily precipitation value on the original export scale. |
+| precip_trace | First PRCP attribute equals T on a reported observation. |
+| precip_obs_time | Fourth attribute value when supplied, 2400 at Central Park. |
+| precip_group | Missing, Recorded zero (0 without trace), Trace (T) or Measurable (positive PRCP). |
+| awnd, snow | Average wind and recorded snowfall on original CSV scale. AWND is excluded from the primary model. |
+| *_raw, *_attributes | Original strings. NOAA attributes encode measurement, quality, source and optional observation time in order. |
+| month, weekday, is_weekend | Month 1–12, weekday Monday 0 through Sunday 6, and Saturday or Sunday indicator. |
+| temp10f | (temp_mid_f − 60)/10. Its square is the other temperature regressor. |
+| lower, upper | Estimate ± 1.96 times calendar-day HAC standard error. For the curve these are pointwise mean intervals. |
+| cook_distance | Classical OLS Cook’s distance used to flag influential dates for sensitivity analysis. |
